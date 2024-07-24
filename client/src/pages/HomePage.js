@@ -26,7 +26,7 @@ const HomePage = () => {
               try {
                      const user = JSON.parse(localStorage.getItem('user'));
                      setLoading(true);
-                     const res = await axios.post('/api/v1/transections/get-transection', {
+                     const res = await axios.post('https://trackmymoney-mern.onrender.com/api/v1/transections/get-transection', {
                             userid: user._id,
                             fequency,
                             selectedDate,
@@ -47,7 +47,7 @@ const HomePage = () => {
        const handelDelete = async (record) => {
               try {
                      setLoading(true);
-                     await axios.post('/api/v1/transections/delete-transection', { transectionId: record._id });
+                     await axios.post('https://trackmymoney-mern.onrender.com/api/v1/transections/delete-transection', { transectionId: record._id });
                      setLoading(false);
                      message.success("Transaction deleted successfully");
                      fetchTransactions();
@@ -62,7 +62,7 @@ const HomePage = () => {
                      const user = JSON.parse(localStorage.getItem('user'));
                      setLoading(true);
                      if (editable) {
-                            await axios.post('/api/v1/transections/edit-transection', {
+                            await axios.post('https://trackmymoney-mern.onrender.com/api/v1/transections/edit-transection', {
                                    payload: {
                                           ...values,
                                           userId: user._id,
@@ -71,7 +71,7 @@ const HomePage = () => {
                             });
                             message.success('Transaction Updated successfully');
                      } else {
-                            await axios.post('/transections/add-transection', { ...values, userid: user._id });
+                            await axios.post('https://trackmymoney-mern.onrender.com/transections/add-transection', { ...values, userid: user._id });
                             message.success('Transaction added successfully');
                      }
                      setLoading(false);
