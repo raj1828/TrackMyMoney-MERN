@@ -35,20 +35,35 @@ const Register = () => {
               <>
                      <div className="register-page">
                             {loading && <Spinner />}
-                            <h1 className="register-header">Registertion Form</h1>
+                            <h1 className="register-header">Registration Form</h1>
                             <Form layout="vertical" onFinish={submitHandler} className="register-form-container">
-                                   <Form.Item label="Name" name="name">
+                                   <Form.Item
+                                          label="Name"
+                                          name="name"
+                                          rules={[{ required: true, message: 'Please enter your name!' }]}
+                                   >
                                           <Input />
                                    </Form.Item>
-                                   <Form.Item label="Email" name="email">
+                                   <Form.Item
+                                          label="Email"
+                                          name="email"
+                                          rules={[
+                                                 { required: true, message: 'Please enter your email!' },
+                                                 { type: 'email', message: 'Please enter a valid email!' }
+                                          ]}
+                                   >
                                           <Input type="email" />
                                    </Form.Item>
-                                   <Form.Item label="Password" name="password">
+                                   <Form.Item
+                                          label="Password"
+                                          name="password"
+                                          rules={[{ required: true, message: 'Please enter your password!' }]}
+                                   >
                                           <Input type="password" />
                                    </Form.Item>
                                    <div className="form-footer">
                                           <Link to="/login">Already Registered? Click Here to Login</Link>
-                                          <button className="btn btn-primary">Register</button>
+                                          <button type="submit" className="btn btn-primary">Register</button>
                                    </div>
                             </Form>
                      </div>

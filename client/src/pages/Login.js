@@ -40,10 +40,21 @@ const Login = () => {
                      </header>
                      <div className="login-form-container">
                             <Form layout="vertical" onFinish={submitHandler}>
-                                   <Form.Item label="Email" name="email">
+                                   <Form.Item
+                                          label="Email"
+                                          name="email"
+                                          rules={[
+                                                 { required: true, message: 'Please enter your email!' },
+                                                 { type: 'email', message: 'Please enter a valid email!' }
+                                          ]}
+                                   >
                                           <Input type="email" />
                                    </Form.Item>
-                                   <Form.Item label="Password" name="password">
+                                   <Form.Item
+                                          label="Password"
+                                          name="password"
+                                          rules={[{ required: true, message: 'Please enter your password!' }]}
+                                   >
                                           <Input type="password" />
                                    </Form.Item>
                                    <div className="form-footer">
