@@ -1,0 +1,152 @@
+/* Ensure you import this CSS file in your HomePage component */
+
+.filters {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       padding: 20px;
+       background-color: #f8f9fa;
+       border-radius: 8px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+     
+     .filter-group {
+       flex: 1;
+       min-width: 200px;
+     }
+     
+     .filter-group h6 {
+       margin-bottom: 10px;
+       color: #495057;
+     }
+     
+     .switch-icons {
+       display: flex;
+       align-items: center;
+       gap: 10px;
+     }
+     
+     .icon {
+       font-size: 24px;
+       color: #adb5bd;
+       cursor: pointer;
+     }
+     
+     .icon.active {
+       color: #007bff;
+     }
+     
+     .btn-primary {
+       background-color: #007bff;
+       border-color: #007bff;
+       color: #fff;
+     }
+     
+     .btn-primary:hover {
+       background-color: #0056b3;
+       border-color: #004085;
+     }
+     
+     .content {
+       margin-top: 20px;
+     }
+     
+     .content .ant-table {
+       background-color: #ffffff;
+       border-radius: 8px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.  1);
+       padding: 20px;
+     }
+     
+     .content .ant-table .ant-table-thead > tr > th {
+       background-color: #e9ecef;
+       color: #495057;
+       font-weight: 600;
+     }
+     
+     .content .ant-table .ant-table-tbody > tr > td {
+       color: #495057;
+     }
+     
+     .content .ant-table .ant-table-row:hover {
+       background-color: #f1f3f5;
+     }
+     
+     .ant-modal {
+       border-radius: 8px;
+     }
+     
+     .ant-modal-header {
+       background-color: #007bff;
+       color: #fff;
+       border-bottom: 1px solid #0056b3;
+     }
+     
+     .ant-modal-title {
+       color: #fff;
+     }
+     
+     .ant-modal-footer {
+       border-top: 1px solid #e9ecef;
+     }
+     
+     .ant-form-item-label > label {
+       color: #495057;
+     }
+     
+     .ant-form-item-control-input {
+       border-radius: 4px;
+       border: 1px solid #ced4da;
+       background-color: #fff;
+     }
+     
+     .ant-form-item-control-input-content {
+       padding: 5px;
+     }
+     
+     .ant-select-selector {
+       border-radius: 4px;
+       border: 1px solid #ced4da;
+     }
+     
+     .ant-select-selection-item {
+       color: #495057;
+     }
+     
+     .ant-input {
+       border-radius: 4px;
+       border: 1px solid #ced4da;
+     }
+     
+     .ant-input[type='date'] {
+       padding: 5px;
+     }
+     
+     .ant-btn-primary {
+       border-radius: 4px;
+       background-color: #007bff;
+       border: none;
+       color: #fff;
+     }
+     
+     .ant-btn-primary:hover {
+       background-color: #0056b3;
+     }
+     
+     .actions {
+       display: flex;
+       align-items: center;
+       gap: 10px;
+     }
+     
+     .actions .anticon {
+       cursor: pointer;
+       font-size: 18px;
+       color: #007bff;
+     }
+     
+     .actions .anticon:hover {
+       color: #0056b3;
+     }
+     
+     

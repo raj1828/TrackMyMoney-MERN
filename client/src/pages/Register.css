@@ -1,0 +1,65 @@
+/* Register.css */
+
+.register-page {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       min-height: 100vh;
+       background: #f7f7f7;
+     }
+     
+     .register-header {
+       font-size: 4rem; /* Larger font size for emphasis */
+       font-weight: bold;
+       background: linear-gradient(135deg, #007bff, #00bfae); /* Gradient background */
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       background-clip: text;
+       text-fill-color: transparent;
+       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+       margin-bottom: 30px;
+       text-align: center;
+       letter-spacing: 2px; /* Increased letter spacing */
+     }
+     
+     .register-form-container {
+       width: 100%;
+       max-width: 400px;
+       background: #fff;
+       padding: 20px;
+       border-radius: 8px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+     
+     .register-form-container .ant-form-item {
+       margin-bottom: 16px;
+     }
+     
+     .form-footer {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+     }
+     
+     .form-footer .btn {
+       background-color: #007bff; /* Primary color */
+       color: #fff;
+       border: none;
+       padding: 10px 20px;
+       border-radius: 4px;
+       cursor: pointer;
+     }
+     
+     .form-footer .btn:hover {
+       background-color: #0056b3; /* Darker shade of primary color */
+     }
+     
+     .form-footer a {
+       color: #007bff;
+     }
+     
+     .form-footer a:hover {
+       text-decoration: underline;
+     }
+     

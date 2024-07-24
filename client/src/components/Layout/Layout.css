@@ -1,0 +1,20 @@
+/* Layout.css */
+
+.layout-container {
+       display: flex;
+       flex-direction: column;
+       min-height: 100vh; /* Ensure the layout takes at least the full height of the viewport */
+     }
+     
+     .content {
+       flex: 1; /* Allows the content area to expand and push the footer to the bottom */
+       padding: 20px;
+     }
+     
+     footer {
+       background: #343a40; /* Dark background for footer */
+       color: #fff; /* Light text color for footer */
+       padding: 20px;
+       text-align: center;
+     }
+     

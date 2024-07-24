@@ -1,0 +1,63 @@
+.analytics-container {
+       margin: 20px;
+     }
+     
+     .card-container {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 20px;
+     }
+     
+     .card {
+       background: #ffffff;
+       border-radius: 8px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       width: 48%;
+     }
+     
+     .card-header {
+       background: #007bff;
+       color: #ffffff;
+       padding: 10px;
+       border-radius: 8px 8px 0 0;
+       font-weight: bold;
+     }
+     
+     .card-body {
+       padding: 15px;
+     }
+     
+     .progress-circles {
+       display: flex;
+       justify-content: center;
+       gap: 20px;
+     }
+     
+     .category-container {
+       display: flex;
+       gap: 20px;
+       flex-wrap: wrap;
+     }
+     
+     .category-card {
+       background: #ffffff;
+       border-radius: 8px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       padding: 15px;
+       width: 48%;
+       margin-bottom: 20px;
+     }
+     
+     .category-card h4 {
+       margin-bottom: 15px;
+     }
+     
+     .card-body h5 {
+       margin-bottom: 10px;
+       font-weight: 500;
+     }
+     
+     .card-body .ant-progress {
+       margin-top: 10px;
+     }
+     
