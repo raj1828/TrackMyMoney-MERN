@@ -71,7 +71,7 @@ const HomePage = () => {
                             });
                             message.success('Transaction Updated successfully');
                      } else {
-                            await axios.post('https://trackmymoney-mern.onrender.com/transections/add-transection', { ...values, userid: user._id });
+                            await axios.post('https://trackmymoney-mern.onrender.com/api/v1/transections/add-transection', { ...values, userid: user._id });
                             message.success('Transaction added successfully');
                      }
                      setLoading(false);
