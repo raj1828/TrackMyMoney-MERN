@@ -1,5 +1,6 @@
 /* Ensure you import this CSS file in your HomePage component */
 
+/* Base Styles */
 .filters {
        display: flex;
        flex-wrap: wrap;
@@ -54,7 +55,7 @@
      .content .ant-table {
        background-color: #ffffff;
        border-radius: 8px;
-       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.  1);
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
        padding: 20px;
      }
      
@@ -149,4 +150,85 @@
        color: #0056b3;
      }
      
+     /* Responsive Styles */
+     @media (max-width: 1200px) {
+       .filters {
+         padding: 15px;
+         gap: 15px;
+       }
+     
+       .filter-group {
+         min-width: 150px;
+       }
+     
+       .icon {
+         font-size: 22px;
+       }
+     
+       .content .ant-table {
+         padding: 15px;
+       }
+     }
+     
+     @media (max-width: 992px) {
+       .filters {
+         flex-direction: column;
+         align-items: center;
+       }
+     
+       .filter-group {
+         min-width: 100%;
+       }
+     
+       .switch-icons {
+         flex-direction: column;
+       }
+     
+       .icon {
+         font-size: 20px;
+       }
+     
+       .btn-primary {
+         width: 100%;
+         text-align: center;
+       }
+     }
+     
+     @media (max-width: 768px) {
+       .filter-group h6 {
+         font-size: 14px;
+       }
+     
+       .content .ant-table {
+         font-size: 14px;
+       }
+     
+       .actions .anticon {
+         font-size: 16px;
+       }
+     
+       .ant-form-item-label > label {
+         font-size: 14px;
+       }
+     
+       .ant-input {
+         font-size: 14px;
+       }
+     }
+     
+     @media (max-width: 576px) {
+       .filters {
+         padding: 10px;
+         gap: 10px;
+       }
+     
+       .filter-group {
+         min-width: 100%;
+       }
+     
+       .btn-primary {
+         padding: 10px;
+         font-size: 16px;
+       }
+     }
      

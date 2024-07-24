@@ -7,15 +7,16 @@
        justify-content: center;
        min-height: 100vh;
        background: #f7f7f7;
-     }
-     
-     .login-header {
-       margin-bottom: 30px;
+       padding: 0 20px; /* Add horizontal padding for small screens */
+   }
+   
+   .login-header {
+       margin-bottom: 20px;
        text-align: center;
-     }
-     
-     .login-header h1 {
-       font-size: 4rem; /* Larger font size for emphasis */
+   }
+   
+   .login-header h1 {
+       font-size: 2.5rem; /* Default font size */
        font-weight: bold;
        background: linear-gradient(135deg, #007bff, #00bfae); /* Gradient background */
        -webkit-background-clip: text;
@@ -24,46 +25,76 @@
        text-fill-color: transparent;
        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
        margin: 0;
-       letter-spacing: 2px; /* Increased letter spacing */
-     }
-     
-     .login-form-container {
+       letter-spacing: 1px; /* Default letter spacing */
+   }
+   
+   .login-form-container {
        width: 100%;
        max-width: 400px;
        background: #fff;
        padding: 20px;
        border-radius: 8px;
        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     }
-     
-     .login-form-container .ant-form-item {
+   }
+   
+   .login-form-container .ant-form-item {
        margin-bottom: 16px;
-     }
-     
-     .form-footer {
+   }
+   
+   .form-footer {
        display: flex;
-       justify-content: space-between;
+       flex-direction: column;
        align-items: center;
-     }
-     
-     .form-footer .btn {
+   }
+   
+   .form-footer .btn {
        background-color: #007bff; /* Primary color */
        color: #fff;
        border: none;
        padding: 10px 20px;
        border-radius: 4px;
        cursor: pointer;
-     }
-     
-     .form-footer .btn:hover {
+       width: 100%; /* Full-width button */
+   }
+   
+   .form-footer .btn:hover {
        background-color: #0056b3; /* Darker shade of primary color */
-     }
-     
-     .form-footer a {
+   }
+   
+   .form-footer a {
        color: #007bff;
-     }
-     
-     .form-footer a:hover {
+       margin-top: 10px;
+       text-align: center;
+       display: block;
+   }
+   
+   .form-footer a:hover {
        text-decoration: underline;
-     }
-     
+   }
+   
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+       .login-header h1 {
+           font-size: 2rem; /* Adjust font size for medium screens */
+       }
+   }
+   
+   @media (max-width: 480px) {
+       .login-header h1 {
+           font-size: 1.5rem; /* Adjust font size for small screens */
+       }
+   
+       .login-form-container {
+           padding: 15px;
+       }
+   
+       .form-footer .btn {
+           padding: 12px;
+           font-size: 0.9rem;
+       }
+   
+       .form-footer a {
+           margin-top: 5px;
+       }
+   }
+   

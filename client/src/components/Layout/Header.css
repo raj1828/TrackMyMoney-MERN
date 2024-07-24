@@ -1,41 +1,87 @@
 /* Header.css */
 .custom-navbar {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
        padding: 10px 20px;
-     }
-     
-     .custom-navbar-brand {
+       flex-wrap: wrap;
+   }
+   
+   .custom-navbar-brand {
        font-size: 1.5rem;
        font-weight: bold;
        color: #007bff;
-     }
-     
-     .custom-navbar-brand:hover {
+       text-align: center;
+       margin: 10px 0;
+   }
+   
+   .custom-navbar-brand:hover {
        color: #0056b3;
        text-decoration: none;
-     }
-     
-     .nav-item {
+   }
+   
+   .nav-item {
        display: flex;
        align-items: center;
-     }
-     
-     .nav-link {
+       justify-content: center;
+       margin: 5px 0;
+   }
+   
+   .nav-link {
        color: #333;
        margin-bottom: 0;
        margin-left: 8px;
-     }
-     
-     .nav-link:hover {
+       text-align: center;
+   }
+   
+   .nav-link:hover {
        color: #007bff;
-     }
-     
-     .custom-logout-btn {
+   }
+   
+   .custom-logout-btn {
        background-color: #007bff;
        border: none;
-     }
-     
-     .custom-logout-btn:hover {
+       margin: 5px;
+   }
+   
+   .custom-logout-btn:hover {
        background-color: #0056b3;
-     }
-     
+   }
+   
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+       .custom-navbar {
+           flex-direction: column;
+           padding: 10px;
+       }
+   
+       .nav-item {
+           width: 100%;
+           justify-content: center;
+       }
+   
+       .custom-navbar-brand {
+           font-size: 1.25rem;
+           margin: 5px 0;
+       }
+   
+       .nav-link {
+           margin-left: 0;
+       }
+   }
+   
+   @media (max-width: 480px) {
+       .custom-navbar-brand {
+           font-size: 1rem;
+       }
+   
+       .nav-link {
+           font-size: 0.9rem;
+       }
+   
+       .custom-logout-btn {
+           width: 100%;
+       }
+   }
+   

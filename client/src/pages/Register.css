@@ -7,10 +7,11 @@
        justify-content: center;
        min-height: 100vh;
        background: #f7f7f7;
-     }
-     
-     .register-header {
-       font-size: 4rem; /* Larger font size for emphasis */
+       padding: 0 20px; /* Added padding for smaller screens */
+   }
+   
+   .register-header {
+       font-size: 3rem; /* Adjusted for responsiveness */
        font-weight: bold;
        background: linear-gradient(135deg, #007bff, #00bfae); /* Gradient background */
        -webkit-background-clip: text;
@@ -18,48 +19,82 @@
        background-clip: text;
        text-fill-color: transparent;
        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-       margin-bottom: 30px;
+       margin-bottom: 20px; /* Adjusted margin */
        text-align: center;
-       letter-spacing: 2px; /* Increased letter spacing */
-     }
-     
-     .register-form-container {
+       letter-spacing: 1px; /* Adjusted letter spacing */
+   }
+   
+   .register-form-container {
        width: 100%;
        max-width: 400px;
        background: #fff;
        padding: 20px;
        border-radius: 8px;
        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     }
-     
-     .register-form-container .ant-form-item {
+       box-sizing: border-box; /* Ensures padding is included in width */
+   }
+   
+   .register-form-container .ant-form-item {
        margin-bottom: 16px;
-     }
-     
-     .form-footer {
+   }
+   
+   .form-footer {
        display: flex;
-       justify-content: space-between;
+       flex-direction: column; /* Stack items vertically on smaller screens */
        align-items: center;
-     }
-     
-     .form-footer .btn {
+       margin-top: 10px;
+   }
+   
+   .form-footer .btn {
        background-color: #007bff; /* Primary color */
        color: #fff;
        border: none;
        padding: 10px 20px;
        border-radius: 4px;
        cursor: pointer;
-     }
-     
-     .form-footer .btn:hover {
+       width: 100%; /* Full width on smaller screens */
+   }
+   
+   .form-footer .btn:hover {
        background-color: #0056b3; /* Darker shade of primary color */
-     }
-     
-     .form-footer a {
+   }
+   
+   .form-footer a {
        color: #007bff;
-     }
-     
-     .form-footer a:hover {
+       margin-bottom: 10px; /* Space between link and button */
+   }
+   
+   .form-footer a:hover {
        text-decoration: underline;
-     }
-     
+   }
+   
+   /* Media queries for responsive design */
+   
+   @media (max-width: 768px) {
+       .register-header {
+           font-size: 2.5rem; /* Smaller font size for tablets */
+       }
+   
+       .register-form-container {
+           padding: 15px; /* Adjusted padding for smaller screens */
+       }
+   }
+   
+   @media (max-width: 480px) {
+       .register-header {
+           font-size: 2rem; /* Smaller font size for mobile phones */
+       }
+   
+       .register-form-container {
+           padding: 10px; /* Adjusted padding for mobile screens */
+       }
+   
+       .form-footer {
+           flex-direction: column; /* Stack items vertically on mobile screens */
+       }
+   
+       .form-footer .btn {
+           width: auto; /* Reset width on mobile screens */
+       }
+   }
+   
